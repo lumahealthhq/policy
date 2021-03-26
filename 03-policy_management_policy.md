@@ -5,7 +5,7 @@ last_modified_date: Tue Oct 16 11:30:48 2018 -0700
 
 # 3. Policy Management Policy
 
-Luma implements policies and procedures to maintain compliance and integrity of data. The Security Officer and Privacy Officer are responsible for maintaining policies and procedures and assuring all Luma workforce members, business associates, customers, and partners are adherent to all applicable policies. Previous versions of policies are retained to assure ease of finding policies at specific historic dates in time.
+Luma implements policies and procedures to maintain compliance and integrity of data. The Security Officer and Privacy Officer are responsible for maintaining policies and procedures and assuring all Luma workforce members, business associates, customers, and partners adhere to all applicable policies. Previous versions of policies are retained so they can be viewed at specific dates in time.
 
 ## 3.1 Applicable Standards
 
@@ -23,7 +23,7 @@ Luma implements policies and procedures to maintain compliance and integrity of 
 1. All policies are stored and up to date to maintain Luma compliance with HIPAA, HITRUST, NIST, and other relevant standards. Updates and version control are done similar to source code control.
 1. Policy update requests can be made by any workforce member at any time. Furthermore, all policies are reviewed annually by both the Security and Privacy Officer to assure they are accurate and up-to-date.
 1. Luma employees may request changes to policies using the following process:
-    1. The Luma employee initiates a policy change request by creating an Issue in the ClickUp. The change request may optionally include a GitHub pull request from a separate branch or repository containing the desired changes.
+    1. The Luma employee initiates a policy change request by creating an Issue in ClickUp. The change request may optionally include a GitHub pull request from a separate branch or repository containing the desired changes.
     1. The Security Officer or the Privacy Officer is assigned to review the policy change request.
     1. Once the review is completed, the Security Officer or Privacy Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
     1. If the review is approved, the Security Officer or Privacy Officer then marks the Issue as Done, adding any pertinent notes required.
@@ -33,7 +33,7 @@ Luma implements policies and procedures to maintain compliance and integrity of 
 1. All policies, and associated documentation, are retained for 6 years from the date of its creation or the date when it last was in effect, whichever is later
    * Version history of all Luma policies is done via GitHub.
 1. The policies and information security policies are reviewed and audited annually, or after significant changes occur to Luma's organizational environment. Issues that come up as part of this process are reviewed by Luma management to assure all risks and potential gaps are mitigated and/or fully addressed. The process for reviewing polices is outlined below:
-    1. The Security Officer initiates the policy review by creating an Issue in the Asana.
+    1. The Security Officer initiates the policy review by creating an Issue in Clickup.
     1. The Security Officer or the Privacy Officer is assigned to review the current Luma policies.
     1. If changes are made, the above process is used. All changes are documented in the Issue.
     1. Once the review is completed, the Security Officer or Privacy Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
