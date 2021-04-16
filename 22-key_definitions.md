@@ -5,6 +5,8 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 # 22. Key Definitions
 
+* *Access*: Means the ability or the means necessary to read, write, modify, or communicate data/ information or otherwise use any system resource.
+
 * *Application*: An application hosted by Luma, either maintained and created by Luma, or created by a Partner.
 
 * *Application Level*: Controls and security associated with an Application.
@@ -15,7 +17,7 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 * *Audit Logs*: Encrypted records of activity maintained by the system which provide: 1) date and time of activity; 2) origin of activity (app); 3) identification of user doing activity; and 4) data accessed as part of activity.
 
-* *Access*: Means the ability or the means necessary to read, write, modify, or communicate data/ information or otherwise use any system resource.
+* *AWS*: Amazon Web Services is Luma's primary provider of cloud computing services.
 
 * *Backup*: The process of making an electronic copy of data stored in a computer system. This can either be complete, meaning all data and programs, or incremental, including just the data that changed from the previous backup.
 
@@ -41,18 +43,16 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 * *Electronic Protected Health Information (ePHI)*: Any individually identifiable health information protected by HIPAA that is transmitted by, processed in some way, or stored in electronic media.
 
-* *Environment*: The overall technical environment, including all servers, network devices, and applications.
-
 * *Event*: An event is defined as an occurrence that does not constitute a serious adverse effect on Luma, its operations, or its Customers, though it may be less than optimal. Examples of events include, but are not limited to:
   * A hard drive malfunction that requires replacement;
   * Systems become unavailable due to power outage that is non-hostile in nature, with redundancy to assure ongoing availability of data;
   * Accidental lockout of an account due to incorrectly entering a password multiple times.
 
+* *Environment*: The overall technical environment, including all servers, network devices, and applications.
+
 * *Hardware (or hard drive)*: Any computing device able to create and store ePHI.
 
 * *Health and Human Services (HHS)*: The government body that maintains HIPAA.
-
-* *Individually Identifiable Health Information*: That information that is a subset of health information, including demographic information collected from an individual, and is created or received by a health care provider, health plan, employer, or health care clearinghouse; and relates to the past, present, or future physical or mental health or condition of an individual; the provision of health care to an individual; or the past, present, or future payment for the provision of health care to an individual; and identifies the individual; or with respect to which there is a reasonable basis to believe the information can be used to identify the individual.
 
 * *Indication*: A sign that an Incident may have occurred or may be occurring at the present time. Examples of indications include:
   * The network intrusion detection sensor alerts when a known exploit occurs against an FTP server. Intrusion detection is generally reactive, looking only for footprints of known attacks. It is important to note that many IDS "hits" are also false positives and are neither an event nor an incident;
@@ -60,7 +60,9 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
   * Users complain of slow access to hosts on the Internet;
   * The system administrator sees a filename with unusual characteristics;
   * Automated alerts of activity from log monitors like OSSEC;
-  * An alert from OSSEC about file system integrity issues via our hosting partner Aptible.
+  * An alert from our hosting partner AWS regarding their portions of the [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/).
+
+* *Individually Identifiable Health Information*: That information that is a subset of health information, including demographic information collected from an individual, and is created or received by a health care provider, health plan, employer, or health care clearinghouse; and relates to the past, present, or future physical or mental health or condition of an individual; the provision of health care to an individual; or the past, present, or future payment for the provision of health care to an individual; and identifies the individual; or with respect to which there is a reasonable basis to believe the information can be used to identify the individual.
 
 * *Intrusion Detection System (IDS)*: A software tool use to automatically detect and notify in the event of possible unauthorized network and/or system access.
 
@@ -72,7 +74,7 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 * *Minimum Necessary Information*: Protected health information that is the minimum necessary to accomplish the intended purpose of the use, disclosure, or request. The "minimum necessary" standard applies to all protected health information in any form.
 
-* *Off-Site*: For the purpose of storage of Backup media, off-site is defined as any location separate from the building in which the backup was created. It must be physically separate from the creating site.
+* *Off-Site*: For the purpose of storage of Backup media, off-site is defined as any location separate from the building in which the backup was created. It must be physically separate from the creation site.
 
 * *Organization*: For the purposes of this policy, the term "organization" shall mean Luma.
 
@@ -80,32 +82,24 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 * *Platform*: The overall technical environment of Luma. This encompasses the production system and messaging platform.
 
-* *Production System*: This refers to the production environment where Luma services run via our hosting partner Aptible. This is synonymous with information systems or production servers.
-
-* *Protected Health Information (PHI)*: Individually identifiable health information that is created by or received by the organization, including demographic information, that identifies an individual, or provides a reasonable basis to believe the information can be used to identify an individual, and relates to:
-  * Past, present or future physical or mental health or condition of an individual.
-  * The provision of health care to an individual.
-  * The past, present, or future payment for the provision of health care to an individual.
-
-* *Role*: The category or class of person or persons doing a type of job, defined by a set of similar or identical responsibilities.
-
-* *Sanitization*: Removal or the act of overwriting data to a point of preventing the recovery of the data on the device or media that is being sanitized. Sanitization is typically done before re-issuing a device or media, donating equipment that contained sensitive information or returning leased equipment to the lending company.
-
-* *Trigger Event*: Activities that may be indicative of a security breach that require further investigation (See Appendix).
-
-* *Restricted Area*: Those areas of the building(s) where protected health information and/or sensitive organizational information is stored, utilized, or accessible at any time.
-
-* *Role*: The category or class of person or persons doing a type of job, defined by a set of similar or identical responsibilities.
-
 * *Precursor*: A sign that an Incident may occur in the future. Examples of precursors include:
   * Suspicious network and host-based IDS events/attacks;
   * Alerts as a result of detecting malicious code at the network and host levels;
   * Alerts from file integrity checking software;
   * Audit log alerts.
 
-* *Risk*: The likelihood that a threat will exploit a vulnerability, and the impact of that event on the confidentiality, availability, and integrity of ePHI, other confidential or proprietary electronic information, and other system assets.
+* *Production System*: This refers to the production environment where Luma services run in AWS. This is synonymous with information systems or production servers.
 
-* *Risk Management Team*: Individuals who are knowledgeable about the Organization's HIPAA Privacy, Security and HITECH policies, procedures, training program, computer system set up, and technical security controls, and who are responsible for the risk management process and procedures outlined below.
+* *Protected Health Information (PHI)*: Individually identifiable health information that is created by or received by the organization, including demographic information, that identifies an individual, or provides a reasonable basis to believe the information can be used to identify an individual, and relates to:
+  * Past, present or future physical or mental health or condition of an individual.
+  * The provision of health care to an individual.
+  * The past, present, or future payment for the provision of health care to an individual.
+
+* *Restricted Area*: Those areas of the building(s) where protected health information and/or sensitive organizational information is stored, utilized, or accessible at any time.
+
+* *Role*: The category or class of person or persons doing a type of job, defined by a set of similar or identical responsibilities.
+
+* *Risk*: The likelihood that a threat will exploit a vulnerability, and the impact of that event on the confidentiality, availability, and integrity of ePHI, other confidential or proprietary electronic information, and other system assets.
 
 * *Risk Assessment*: (Referred to as Risk Analysis in the HIPAA Security Rule); the process:
   * Identifies the risks to information system security and determines the probability of occurrence and the resulting impact for each threat/vulnerability pair identified given the security controls in place;
@@ -114,7 +108,13 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 * *Risk Management*: Within this policy, it refers to two major process components: risk assessment and risk mitigation. This differs from the HIPAA Security Rule, which defines it as a risk mitigation process only. The definition used in this policy is consistent with the one used in documents published by the National Institute of Standards and Technology (NIST).
 
+* *Risk Management Team*: Individuals who are knowledgeable about the Organization's HIPAA Privacy, Security and HITECH policies, procedures, training program, computer system set up, and technical security controls, and who are responsible for the risk management process and procedures outlined below.
+
 * *Risk Mitigation*: Referred to as Risk Management in the HIPAA Security Rule, and is a process that prioritizes, evaluates, and implements security controls that will reduce or offset the risks determined in the risk assessment process to satisfactory levels within an organization given its mission and available resources.
+
+* *Role*: The category or class of person or persons doing a type of job, defined by a set of similar or identical responsibilities.
+
+* *Sanitization*: Removal or the act of overwriting data to a point of preventing the recovery of the data on the device or media that is being sanitized. Sanitization is typically done before re-issuing a device or media, donating equipment that contained sensitive information or returning leased equipment to the lending company.
 
 * *Security Incident* (or just Incident): A security incident is an occurrence that exercises a significant adverse effect on people, process, technology, or data. Security incidents include, but are not limited to:
   * A system or network breach accomplished by an internal or external entity; this breach can be inadvertent or malicious;
@@ -140,9 +140,11 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
   * Technological - server failure, software failure, ancillary equipment failure, etc. and environmental threats, such as power outages, hazardous material spills.
   * Other - explosions, medical emergencies, misuse or resources, etc.
 
+* *Threat Action*: The method by which an attack might be carried out (e.g., hacking, system intrusion, etc.).
+
 * *Threat Source*: Any circumstance or event with the potential to cause harm (intentional or unintentional) to an IT system. Common threat sources can be natural, human or environmental which can impact the organization's ability to protect ePHI.
 
-* *Threat Action*: The method by which an attack might be carried out (e.g., hacking, system intrusion, etc.).
+* *Trigger Event*: Activities that may be indicative of a security breach that require further investigation (See Appendix).
 
 * *Unrestricted Area*: Those areas of the building(s) where protected health information and/or sensitive organizational information is not stored or is not utilized or is not accessible there on a regular basis.
 
@@ -158,6 +160,6 @@ last_modified_date: Tue Jan 9 17:16:04 2018 -0800
 
 * *Vulnerability*: A weakness or flaw in an information system that can be accidentally triggered or intentionally exploited by a threat and lead to a compromise in the integrity of that system, i.e., resulting in a security breach or violation of policy.
 
-* *Workstation*: An electronic computing device, such as a laptop or desktop computer, or any other device that performs similar functions, used to create, receive, maintain, or transmit ePHI. Workstation devices may include, but are not limited to: laptop or desktop computers, personal digital assistants (PDAs), tablet PCs, and other handheld devices. For the purposes of this policy, "workstation" also includes the combination of hardware, operating system, application software, and network connection.
-
 * *Workforce*: Means employees, volunteers, trainees, and other persons whose conduct, in the performance of work for a covered entity, is under the direct control of such entity, whether or not they are paid by the covered entity.
+
+* *Workstation*: An electronic computing device, such as a laptop or desktop computer, or any other device that performs similar functions, used to create, receive, maintain, or transmit ePHI. Workstation devices may include, but are not limited to: laptop or desktop computers, personal digital assistants (PDAs), tablet PCs, and other handheld devices. For the purposes of this policy, "workstation" also includes the combination of hardware, operating system, application software, and network connection.
